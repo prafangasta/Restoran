@@ -1,4 +1,4 @@
-public class Pesanan {
+class Pesanan {
     private Pelanggan pelanggan;
     private Menu[] menuList = new Menu[100]; 
     private int count = 0; 
@@ -13,6 +13,12 @@ public class Pesanan {
             menuList[count++] = menu;
         } else {
             System.out.println("Pesanan sudah penuh.");
+        }
+    }
+
+    public void tambahMenu(Menu menu, int jumlah) {
+        for (int i = 0; i < jumlah; i++) {
+            tambahMenu(menu);
         }
     }
 
