@@ -40,9 +40,7 @@ public class Main {
                 if (pilihanMakanan >= 0 && pilihanMakanan < daftarMakanan.length) {
                     System.out.print("Masukkan jumlah pesanan: ");
                     int jumlahMakanan = scanner.nextInt();
-                    for (int i = 0; i < jumlahMakanan; i++) {
-                        pesanan.tambahMenu(daftarMakanan[pilihanMakanan]);
-                    }
+                    pesanan.tambahMenu(daftarMakanan[pilihanMakanan], jumlahMakanan);
                 } else {
                     System.out.println("Pilihan tidak valid.");
                 }
@@ -56,9 +54,7 @@ public class Main {
                 if (pilihanMinuman >= 0 && pilihanMinuman < daftarMinuman.length) {
                     System.out.print("Masukkan jumlah pesanan: ");
                     int jumlahMinuman = scanner.nextInt();
-                    for (int i = 0; i < jumlahMinuman; i++) {
-                        pesanan.tambahMenu(daftarMinuman[pilihanMinuman]);
-                    }
+                    pesanan.tambahMenu(daftarMinuman[pilihanMinuman], jumlahMinuman);
                 } else {
                     System.out.println("Pilihan tidak valid.");
                 }
