@@ -1,4 +1,3 @@
-
 public class Pesanan {
     private Pelanggan pelanggan;
     private Menu[] menuList = new Menu[100]; 
@@ -31,10 +30,7 @@ public class Pesanan {
 
     @Override
     public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append("Pesanan untuk ").append(pelanggan.getNama()).append("\n");
-        sb.append("Tipe Pesanan: ").append(tipePesanan).append("\n");
-        sb.append("Total Harga: ").append(hitungTotalHarga()).append("\n");
-        return sb.toString();
+        return String.format("Pesanan untuk %s%nTipe Pesanan: %s%nTotal Harga: %.2f%n", 
+                             pelanggan.getNama(), tipePesanan, hitungTotalHarga());
     }
 }
