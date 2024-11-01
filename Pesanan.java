@@ -33,10 +33,4 @@ class Pesanan {
         }
         return total;
     }
-
-    @Override
-    public String toString() {
-        return String.format("Pesanan untuk %s%nTipe Pesanan: %s%nTotal Harga: %.2f%n", 
-                             pelanggan.getNama(), tipePesanan, hitungTotalHarga());
-    }
 }
